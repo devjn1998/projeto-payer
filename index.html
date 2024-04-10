@@ -23,49 +23,47 @@
 
 <body>
     <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
-        <a href="#">
-            <img src="source/img/logo/logo_fn6.png" alt="logo_fn_agenciamentos" class="logo-fn">
+        <a href="#" class="imagem">
+            <img src="source/img/logo/logo_fn6.png" alt="logo_fn_agenciamentos" class="logo-fn img-fluid">
         </a>
-        <div class="d-flex justify-content-between mx-4 w-100">
-            <!-- <h1 class="navbar-brand m-0">
-                <h2 class="logo-mobile">FN AGENCIAMENTOS</h2> -->
-                
-            <!-- </h1> -->
-            <button class="navbar-toggler mb-2" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
-                <span id="button-navbar" class="navbar-toggler-icon"></span>
-            </button>
-            
-        </div>
-        <nav class="navbar-collapse collapse justify-content-between w-100" id="menu-navegacao">
-            <ul class="nav nav-pills d-flex w-100">
-                <li class="nav-item fw-bold">
+        <button class="navbar-toggler mb-2 bg-transparent navbar-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#menu-navegacao" aria-controls="menu-navegacao" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span id="button-navbar" class="navbar-toggler-icon text-light"></span>
+        </button>
+
+        <nav class="collapse navbar-collapse justify-content-between w-100" id="menu-navegacao">
+            <ul class="nav nav-pills flex-column flex-lg-row justify-content-end w-100">
+                <li class="nav-item">
                     <a href="#" class="nav-link active">
-                        EMPRESA
+                        <span style="font-size: 14px;">EMPRESA</span>
                     </a>
                 </li>
-                <li class="nav-item fw-bold">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
-                        RESPONSABILIDADE SOCIAL
+                        <span style="font-size: 14px;">RESPONSABILIDADE SOCIAL</span>
                     </a>
                 </li>
-                <li class="nav-item fw-bold">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
-                        SERVIÇOS
+                        <span style="font-size: 14px;">SERVIÇOS</span>
                     </a>
                 </li>
-                <li class="nav-item fw-bold">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
-                        CLIENTES
+                        <span style="font-size: 14px;">CLIENTES</span>
                     </a>
                 </li>
-                <li class="nav-item fw-bold">
+                <li class="nav-item">
                     <a href="#" class="nav-link">
-                        CONTATO
+                        <span style="font-size: 14px;">CONTATO</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
+
+
 
 
 
@@ -233,12 +231,12 @@
     </section>
 
 
-    <footer>
-        <div class="container container-flex">
+    <footer id="ft" class="footer bg-dark text-light py-4 container">
+        <div class="container-flex">
             <p class="fw-bold">2024 &copy; FN AGENCIAMENTOS MARÍTMOS - TODOS OS DIREITOS RESERVADOS &copy;</p>
         </div>
 
-        <ul class="container-flex">
+        <ul style="display: grid; grid-template-columns: repeat(3, 1fr);">
             <li>
                 <a href="#">
                     <img style="height: 32px;" src="/source/img/icons/facebook.png" alt="">
