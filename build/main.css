@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/*Importações*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+/*Functions*/
+/*Corpo e Header*/
+body {
+  background: linear-gradient(to bottom, #F5F6FA, #dcdde1);
+}
+
+header .nav .nav-link.active {
+  color: #F5F6FA;
+  background-color: #487eb0;
+}
+
+header {
+  background: linear-gradient(to bottom, #192A56, transparent);
+}
+header .nav-pills {
+  transition: opacity 3s ease;
+  opacity: 0.2;
+}
+header .nav-pills:hover {
+  opacity: 1;
+}
+header a.nav-link {
+  background: linear-gradient(to bottom, #192A56, transparent);
+  margin-left: 2px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  border-radius: none;
+  color: #F5F6FA;
+}
+header a.nav-link:hover {
+  border-bottom: 3px solid #fbc531;
+  color: #fbc531;
+}
+header .nav-pills .nav-link {
+  border-radius: 0;
+}
+header h2.logo-mobile {
+  display: none;
+  color: #F5F6FA;
+  font-family: "Archivo Black", sans-serif;
+  align-items: center;
+  margin: 0;
+  border-bottom: 3px solid #fbc531;
+}
+header img.logo-fn {
+  display: block;
+}
+header button.navbar-toggler.mb-2 {
+  background-color: #273C75;
+}
+
+/*Carousel*/
+div.alinhamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+div.alinhamento button.btn-servicos {
+  background-color: #fbc531;
+  border-radius: 2px;
+  font-weight: bolder;
+  padding: 14px;
+  margin-top: 18px;
+  border: none;
+}
+div.alinhamento button.btn-servicos:hover {
+  background-color: #f4b405;
+}
+
+.mask-transparent {
+  mask-image: linear-gradient(to bottom, transparent 10%, black 45%);
+}
+
+.texto-sombreado {
+  text-shadow: 10px 10px 16px rgba(1, 1, 1, 0.9);
+  color: rgba(243, 120, 6, 0.8);
+  text-transform: uppercase;
+}
+
+.carousel-caption {
+  color: rgba(251, 197, 49, 0.4);
+  text-transform: uppercase;
+  top: 0;
+  bottom: auto;
+  transform: translateY(0%);
+  padding: 20px;
+}
+
+/*Borda detalhes*/
+.borda {
+  border-bottom: 2px solid #fbc531;
+  padding: 4px;
+}
+
+/*Seção nossos serviços*/
+section#nossos-servicos,
+section#nosso-contato {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  background: #F5F6FA;
+}
+
+.servicos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+.servicos .h5,
+.servicos h4 {
+  color: #192A56;
+  padding: 6px;
+}
+
+/*Seção de contato*/
+.align {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.align form {
+  max-width: 860px;
+  width: 100%;
+  padding: 18px;
+}
+.align .form-campo {
+  margin-bottom: 6px;
+  width: 100%;
+}
+.align .form-campo label {
+  font-weight: bolder;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+}
+.align .form-campo input {
+  border: none;
+  width: 80%;
+  height: 2em;
+  border-bottom: 2px solid #192A56;
+  text-align: center;
+}
+.align .form-campo input:focus {
+  outline: none;
+}
+.align .form-campo textarea {
+  resize: none;
+  height: 120px;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #192A56;
+  text-align: center;
+}
+.align .form-campo textarea:focus {
+  outline: none;
+}
+
+.btn-contato {
+  background-color: #fbc531;
+  border-radius: 2px;
+  font-weight: bolder;
+  padding: 14px;
+  margin-top: 12px;
+  border: none;
+  width: 11.8em;
+}
+.btn-contato:hover {
+  background-color: #f4b405;
+}
+
+header button.navbar-toggler.mb-2 {
+  background-color: white;
+}
+
+/*Rodapé*/
+footer {
+  padding: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+footer li {
+  list-style: none;
+  display: inline;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 550px) {
+  header h2.logo-mobile {
+    font-size: 1.3em;
+  }
+  header img.logo-fn {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .servicos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

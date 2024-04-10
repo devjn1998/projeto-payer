@@ -1,0 +1,314 @@
+/*Importações*/
+
+@use 'config/reset';
+@use 'config/variaveis';
+@use 'sass:math';
+
+/*Functions*/
+
+@mixin elementoform($margin: 16px) {
+    padding: 8px;
+    display: block;
+    width: 100%;
+    margin-bottom: $margin;
+}
+
+@function pixelParaEm($alvoEmPixel, $contextoEmPixel: 16px) {
+    @return math.div($alvoEmPixel, $contextoEmPixel)+em;
+}
+
+/*Corpo e Header*/
+
+body {
+    background: linear-gradient(to bottom, variaveis.$corDeFundo, #dcdde1)
+}
+
+header .nav .nav-link.active {
+    color: variaveis.$corDeFundo;
+    background-color: variaveis.$corTerciaria;
+}
+
+header {
+    background: variaveis.$corHeader;
+
+    .nav-pills {
+        transition: opacity 3s ease;
+        opacity: 0.2;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    a.nav-link {
+        background: variaveis.$corHeader;
+        margin-left: 2px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        border-radius: none;
+        color: variaveis.$corDeFundo;
+
+
+        &:hover {
+            border-bottom: 3px solid variaveis.$corDetalhes;
+            color: variaveis.$corDetalhes;
+
+        }
+
+
+    }
+
+    .nav-pills .nav-link {
+        border-radius: 0;
+    }
+
+    h2.logo-mobile {
+        display: none;
+        color: variaveis.$corDeFundo;
+        font-family: variaveis.$fontMobile;
+        align-items: center;
+        margin: 0;
+        border-bottom: 3px solid variaveis.$corDetalhes;
+    }
+
+    img.logo-fn {
+        display: block;
+    }
+
+    button.navbar-toggler.mb-2 {
+        background-color: variaveis.$corSecundaria;
+
+    }
+}
+
+/*Carousel*/
+
+div.carousel {
+    // border-bottom: 0.6em solid variaveis.$corPrincipal;
+}
+
+div.alinhamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+
+    button.btn-servicos {
+        background-color: variaveis.$corDetalhes;
+        border-radius: 2px;
+        font-weight: bolder;
+        padding: 14px;
+        margin-top: 18px;
+        border: none;
+
+        &:hover {
+            background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
+        }
+    }
+}
+
+.mask-transparent {
+    mask-image: linear-gradient(to bottom, transparent 10%, black 45%);
+}
+
+.texto-sombreado {
+    text-shadow: 10px 10px 16px rgba(1, 1, 1, 0.9);
+    color: rgba(243, 120, 6, 0.8);
+    text-transform: uppercase;
+}
+
+.carousel-caption {
+    color: rgba(251, 197, 49, 0.4);
+    text-transform: uppercase;
+    top: 0;
+    bottom: auto;
+    transform: translateY(0%);
+    padding: 20px;
+
+}
+
+/*Borda detalhes*/
+
+.borda {
+    border-bottom: 2px solid variaveis.$corDetalhes;
+    padding: 4px;
+}
+
+/*Seção nossos serviços*/
+
+
+section#nossos-servicos,
+section#nosso-contato {
+
+    padding-top: 68px;
+    padding-bottom: 68px;
+    // border-bottom: 0.6em solid variaveis.$corPrincipal;
+
+    background: variaveis.$corDeFundo;
+
+
+
+}
+
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    text-align: center;
+
+    .h5,
+    h4 {
+        color: variaveis.$corPrincipal;
+        padding: 6px;
+    }
+
+
+
+}
+
+/*Seção de contato*/
+
+.align {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+        max-width: 860px;
+        width: 100%;
+        padding: 18px;
+    }
+
+    .form-campo {
+        margin-bottom: 6px;
+
+        width: 100%;
+
+        label {
+            font-weight: bolder;
+            text-transform: uppercase;
+            cursor: pointer;
+            display: block;
+        }
+
+        input {
+            border: none;
+            width: 80%;
+            height: 2em;
+            border-bottom: 2px solid variaveis.$corPrincipal;
+
+            text-align: center;
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+            width: 80%;
+            border: none;
+            border-bottom: 2px solid variaveis.$corPrincipal;
+
+            text-align: center;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+    }
+}
+
+.btn-contato {
+    background-color: variaveis.$corDetalhes;
+    border-radius: 2px;
+    font-weight: bolder;
+    padding: 14px;
+    margin-top: 12px;
+    border: none;
+    width: 11.8em;
+
+    &:hover {
+        background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
+    }
+}
+
+header button.navbar-toggler.mb-2 {
+    background-color: white;
+}
+
+
+
+/*Rodapé*/
+
+footer {
+    padding: 68px;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        list-style: none;
+        display: inline;
+        margin-right: 8px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+
+
+    header {
+
+        h2.logo-mobile {
+            font-size: 1.3em;
+
+        }
+
+        img.logo-fn {
+            display: block;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+        
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+}
