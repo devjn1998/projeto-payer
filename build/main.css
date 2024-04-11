@@ -214,6 +214,11 @@ footer li {
   form.card {
     width: 100%;
   }
+  .font-text {
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: #192A56;
+  }
 }
 @media (max-width: 425px) {
   .servicos {
