@@ -34,6 +34,7 @@ header .nav .nav-link.active {
 
 header {
     background: variaveis.$corHeader;
+    display: flex;
 
     .nav-pills {
         transition: opacity 3s ease;
@@ -62,22 +63,14 @@ header {
 
         }
 
-
+    
     }
 
     .nav-pills .nav-link {
         border-radius: 0;
     }
 
-    h2.logo-mobile {
-        display: none;
-        color: variaveis.$corDeFundo;
-        font-family: variaveis.$fontMobile;
-        align-items: center;
-        margin: 0;
-        border-bottom: 3px solid variaveis.$corDetalhes;
-    }
-
+   
     img.logo-fn {
         display: block;
     }
@@ -156,7 +149,7 @@ section#nosso-contato {
 
 .servicos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     text-align: center;
 
@@ -186,7 +179,6 @@ section#nosso-contato {
 
     .form-campo {
         margin-bottom: 6px;
-
         width: 100%;
 
         label {
@@ -208,6 +200,11 @@ section#nosso-contato {
                 outline: none;
             }
 
+            &:hover
+            {
+                background-color: variaveis.$corDeFundo;
+            }
+
         }
 
         textarea {
@@ -215,12 +212,17 @@ section#nosso-contato {
             height: 120px;
             width: 80%;
             border: none;
+            
             border-bottom: 2px solid variaveis.$corPrincipal;
 
             text-align: center;
 
             &:focus {
                 outline: none;
+            }
+            &:hover
+            {
+                background-color: variaveis.$corDeFundo;
             }
         }
 
@@ -267,7 +269,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
-        
+
         text-align: center;
 
     }
@@ -280,6 +282,10 @@ footer {
         text-align: center;
 
     }
+    form.card
+    {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -289,10 +295,62 @@ footer {
         text-align: center;
     }
 
-    #ft
+    .font-text
     {
-        display: flex;
-        flex-direction: column;
+        font-size: 0.8rem;
+        font-weight: bolder;
+        color: variaveis.$corPrincipal;
+    }
+    header img
+    {
+        width: 50%;
+    }
+    form.card
+    {
+        width: 100%;
     }
 
+    header a
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button.navbar-toggler
+    {
+        width: 13%;
+    }
+
+    #button-navbar
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px)
+{
+    #cabecalho
+    {
+        display: flex;
+        justify-content: end;
+    }
+
+    button.navbar-toggler
+    {
+        width: 20%;
+        &:hover
+        {
+            background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
+        }
+    }
+
+    #button-navbar
+    {
+        width: 100%;   
+    }
+
+    header img
+    {
+        width: 70%;
+    }
 }
