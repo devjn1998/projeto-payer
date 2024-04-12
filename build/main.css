@@ -13,6 +13,10 @@ body {
   background: linear-gradient(to bottom, #F5F6FA, #dcdde1);
 }
 
+h2, a {
+  font-family: "Montserrat", sans-serif;
+}
+
 a {
   font-size: 12px;
 }
@@ -85,15 +89,18 @@ div.alinhamento {
   justify-content: center;
   width: 100%;
 }
-div.alinhamento button.btn-servicos {
+div.alinhamento a.btn-servicos {
   background-color: #fbc531;
   border-radius: 2px;
   font-weight: bolder;
   padding: 14px;
   margin-top: 18px;
   border: none;
+  border-radius: 6px;
+  color: #192A56;
+  text-decoration: none;
 }
-div.alinhamento button.btn-servicos:hover {
+div.alinhamento a.btn-servicos:hover {
   background-color: #f4b405;
 }
 
@@ -175,40 +182,93 @@ section#nossa-apresentacao {
 .align .form-campo label {
   font-weight: bolder;
   text-transform: uppercase;
+  padding: 10px;
   cursor: pointer;
   display: block;
+  text-decoration: underline;
 }
 .align .form-campo input {
   border: none;
   width: 80%;
   height: 2em;
-  border-bottom: 2px solid #192A56;
   text-align: center;
+  background-color: #F5F6FA;
+  border-radius: 6px;
+  cursor: pointer;
 }
 .align .form-campo input:focus {
   outline: none;
 }
 .align .form-campo input:hover {
-  background-color: #F5F6FA;
+  background-color: #ccc;
+}
+.align .form-campo input::placeholder {
+  color: #ccc;
+  font-size: 0.8rem;
 }
 .align .form-campo textarea {
   resize: none;
   height: 120px;
   width: 80%;
   border: none;
-  border-bottom: 2px solid #192A56;
+  border-radius: 6px;
+  background-color: #F5F6FA;
   text-align: center;
+  cursor: pointer;
+  color: #F5F6FA;
 }
 .align .form-campo textarea:focus {
   outline: none;
 }
 .align .form-campo textarea:hover {
-  background-color: #F5F6FA;
+  background-color: #ccc;
+}
+.align .form-campo textarea::placeholder {
+  color: #ccc;
+  font-size: 0.8rem;
+  padding-top: 10px;
+}
+
+/* Seção de Serviços */
+section#agenciamento-maritmo, section#gerenciamento,
+section#gerenciamento-projetos, section#acessoria {
+  margin-bottom: 28px;
+}
+
+.descricao-servicos {
+  padding: 28px;
+}
+
+.agenciamento-maritimo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 28px;
+}
+.agenciamento-maritimo a img {
+  width: 60px;
+  margin-right: 20px;
+}
+.agenciamento-maritimo .duas-colunas-servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+}
+
+.cor-destaque {
+  font-weight: bolder;
+  color: #192A56;
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-servicos {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 .btn-contato {
   background-color: #fbc531;
-  border-radius: 2px;
+  border-radius: 6px;
   font-weight: bolder;
   padding: 14px;
   margin-top: 12px;
@@ -288,6 +348,7 @@ aside {
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   background-color: #fbc531;
+  border-radius: 6px;
 }
 .btn-apresentacao:hover {
   background-color: #f4b405;

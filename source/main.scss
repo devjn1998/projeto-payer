@@ -23,6 +23,10 @@ body {
     background: linear-gradient(to bottom, variaveis.$corDeFundo, #dcdde1)
 }
 
+h2, a {
+    font-family: variaveis.$fontCarousel;
+}
+
 a {
     font-size: 12px;
 }
@@ -35,6 +39,8 @@ header .nav .nav-link.active {
 header {
     background: variaveis.$corHeader;
     display: flex;
+
+   
 
     .nav-pills {
         transition: opacity 3s ease;
@@ -113,13 +119,16 @@ div.alinhamento {
     width: 100%;
 
 
-    button.btn-servicos {
+    a.btn-servicos {
         background-color: variaveis.$corDetalhes;
         border-radius: 2px;
         font-weight: bolder;
         padding: 14px;
         margin-top: 18px;
         border: none;
+        border-radius: 6px;
+        color: variaveis.$corPrincipal;
+        text-decoration: none;
 
         &:hover {
             background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
@@ -215,26 +224,32 @@ section#nossa-apresentacao {
         label {
             font-weight: bolder;
             text-transform: uppercase;
+            padding: 10px;
             cursor: pointer;
             display: block;
+            text-decoration: underline;
         }
 
         input {
             border: none;
             width: 80%;
             height: 2em;
-            border-bottom: 2px solid variaveis.$corPrincipal;
-
             text-align: center;
-
+            background-color: variaveis.$corDeFundo;
+            border-radius: 6px;
+            cursor: pointer;
             &:focus {
                 outline: none;
             }
-
             &:hover {
-                background-color: variaveis.$corDeFundo;
+                background-color: #ccc;
             }
+        }
 
+        input::placeholder
+        {
+            color: #ccc;
+            font-size: 0.8rem;
         }
 
         textarea {
@@ -242,31 +257,91 @@ section#nossa-apresentacao {
             height: 120px;
             width: 80%;
             border: none;
-
-            border-bottom: 2px solid variaveis.$corPrincipal;
-
+            border-radius: 6px;
+            background-color: variaveis.$corDeFundo;
             text-align: center;
+            cursor: pointer;
+            color: variaveis.$corDeFundo;
+
 
             &:focus {
                 outline: none;
             }
 
             &:hover {
-                background-color: variaveis.$corDeFundo;
+                background-color: #ccc;
             }
+        }
+
+        textarea::placeholder {
+            color: #ccc;
+            font-size: 0.8rem;
+            padding-top: 10px;
         }
 
     }
 }
 
+/* Seção de Serviços */
+
+section#agenciamento-maritmo, section#gerenciamento,
+section#gerenciamento-projetos, section#acessoria
+{
+    margin-bottom: 28px;
+}
+
+.descricao-servicos
+{
+    padding: 28px;
+}
+
+.agenciamento-maritimo
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 28px;
+
+    a
+    {
+        img
+        {
+            width: 60px;
+            margin-right: 20px;
+        }
+    }
+
+    .duas-colunas-servicos
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3%;
+    }
+}
+
+.cor-destaque
+{
+    font-weight: bolder;
+    color: variaveis.$corPrincipal;
+    font-family: variaveis.$fontCarousel;
+}
+
+.font-servicos
+{
+    font-family: variaveis.$fontCarousel;
+    font-weight: 600;
+}
+
+
 .btn-contato {
     background-color: variaveis.$corDetalhes;
-    border-radius: 2px;
+    border-radius: 6px;
     font-weight: bolder;
     padding: 14px;
     margin-top: 12px;
     border: none;
     width: 11.8em;
+    
 
     &:hover {
         background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
@@ -357,6 +432,7 @@ aside {
     font-family: variaveis.$fontCarousel;
     font-weight: bolder;
     background-color: variaveis.$corDetalhes;
+    border-radius: 6px;
 
 
     &:hover {
