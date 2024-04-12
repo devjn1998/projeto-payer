@@ -328,12 +328,16 @@ footer li {
   .tres-colunas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
+  .card-tab div {
+    padding: 10px;
   }
   div.container {
     height: 700px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .servicos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -358,7 +362,7 @@ footer li {
   }
   .duas-colunas {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 2fr);
   }
   .card-tab {
     display: flex;
@@ -380,6 +384,9 @@ footer li {
   section#nossa-apresentacao .card-tab {
     height: 450px;
     justify-content: center;
+  }
+  section#nossa-apresentacao .img-responsize {
+    display: none;
   }
   .tres-colunas {
     display: grid;
