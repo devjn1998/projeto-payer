@@ -352,7 +352,7 @@ aside {
 
 
     &:hover {
-        background-color: variaveis.$corDeFundo;
+        background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
     }
 }
 

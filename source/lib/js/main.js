@@ -45,20 +45,6 @@ $('form').validate({
     }
 })
 
-// rolar até o conteúdo 
-$(document).ready(function () {
-    // Adiciona o comportamento de scroll suave aos links da barra de navegação que apontam para uma seção interna
-    $("a").on('click', function (event) {
-        if (this.hash !== "" && this.pathname === window.location.pathname) {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function () {
-                window.location.hash = hash;
-            });
-        }
-    });
-});
+// rolar até o conteúdo
 
 
