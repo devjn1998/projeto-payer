@@ -220,7 +220,7 @@
                                         necessidades específicas de nossos clientes, garantindo transparência e
                                         qualidade em todas as etapas do processo.</p>
                                 </div>
-                                <div style="padding: 0;" class="col-md-6 card-tab ">
+                                <div id="imgdiv" style="padding: 0;" class="col-md-6 card-tab ">
                                     <a class="cunstom-rounded-right" href="#"
                                         class="img-responsize" style="background-image: url('source/img/slide/slide_7.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"></a>
                                 </div>
@@ -233,7 +233,7 @@
                                     <p>Ser reconhecida como a principal empresa de agenciamento marítimo no Brasil
                                         estabelecendo um alto padrão de excelência e inovação no setor.</p>
                                 </div>
-                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                <div id="imgdiv" style="padding: 0;" class="col-md-6 card-tab">
                                     <a class="cunstom-rounded-right" href="#"
                                         class="img-responsize" style="background-image: url('source/img/slide/slide_8.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"></a>
                                 </div>
@@ -245,7 +245,7 @@
                                     <h2 class="borda">NOSSO PROPÓSITO</h2>
                                     <p>Navegar com nossos clientes em todos os seus projetos, impulsionando a conectividade global por meio do agenciamento marítimo.</p>
                                 </div>
-                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                <div id="imgdiv" style="padding: 0;" class="col-md-6 card-tab">
                                     <a class="cunstom-rounded-right" href="#"
                                         class="img-responsize" style="background-image: url('source/img/slide/slide_6.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"></a>
                                 </div>
@@ -256,49 +256,56 @@
                                 <div id="valores-size" class="col-md-6 card card-tab cunstom-rounded-left">
                                     <h2 class="borda">NOSSOS VALORES</h2>
                                     <div class="tres-colunas">
-                                        <div class="row">
-                                            <a href="#">
-                                                <img style="width: 58px;" src="/source/img/icons/trust.png" alt="trust">
-                                            </a>
-                                            <h2 class="h6">
-                                                CONFIANÇA
-                                            </h2>
+                                        <div class="row imagem">
+                                                <a onclick="handleClick(event)" href="#">
+                                                    <img style="width: 58px;" src="/source/img/icons/trust.png" alt="trust">
+                                                    <span class="tooltip">Construímos um relacionamento de confiança com nossos clientes, parceiros e colaboradores.</span>
+                                                </a>
+                                                
+                                                <h2 class="h6">
+                                                    CONFIANÇA
+                                                </h2>
                                         </div>
-                                        <div class="row">
-                                            <a href="#">
+                                        <div class="row imagem">
+                                            <a onclick="handleClick(event)" href="#">
                                                 <img style="width: 58px;" src="/source/img/icons/security.png" alt="trust">
+                                                <span class="tooltip">Priorizamos a segurança em todas as nossas atividades, respeitando leis, clientes e colaboradores.</span>                                                </span>
                                             </a>
                                             <h2 class="h6">
                                                 SEGURANÇA
                                             </h2>
                                         </div>
-                                        <div class="row">
-                                            <a href="#">
+                                        <div class="row imagem">
+                                            <a onclick="handleClick(event)" href="#">
                                                 <img style="width: 58px;" src="/source/img/icons/honesty.png" alt="trust">
+                                                <span class="tooltip">Honramos os compromissos assumidos.</span>
                                             </a>
                                             <h2 class="h6">
                                                 LEALDADE
                                             </h2>
                                         </div>
-                                        <div class="row">
-                                            <a href="#">
+                                        <div class="row imagem">
+                                            <a onclick="handleClick(event)" href="#">
                                                 <img style="width: 58px;" src="/source/img/icons/data-integration.png" alt="trust">
+                                                <span class="tooltip">Agimos de forma correta, transparente e ética em todas as nossa operações mantendo altos padrões de conduta profissional.</span>
                                             </a>
                                             <h2 class="h6">
                                                 INTEGRIDADE
                                             </h2>
                                         </div>
-                                        <div class="row">
+                                        <div onclick="handleClick(event)" class="row imagem">
                                             <a href="#">
                                                 <img style="width: 58px;" src="/source/img/icons/diversity.png" alt="trust">
+                                                <span class="tooltip">Promovemos uma cultura inclusiva onde cada indivíduo é valorizado e respeitado de forma única.</span>
                                             </a>
                                             <h2 class="h6">
                                                 DIVERSIDADE
                                             </h2>
                                         </div>
-                                        <div class="row">
-                                            <a href="#">
+                                        <div class="row imagem">
+                                            <a onclick="handleClick(event)" href="#">
                                                 <img style="width: 58px;" src="/source/img/icons/competition.png" alt="trust">
+                                                <span class="tooltip">Temos o compromisso em prestar os nossos serviços com qualidade, buscando constantemente a    melhoria contínua e inovação em todos os nossos processos.</span>
                                             </a>
                                             <h2 class="h6">
                                                 EXCELÊNCIA
@@ -307,7 +314,7 @@
                                     </div>
                                     
                                 </div>
-                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                <div onclick="handleClick(event)" id="imgdiv" style="padding: 0;" class="col-md-6 card-tab">
                                     <a class="cunstom-rounded-right" class="img-responsize" style="background-image: url('source/img/slide/slide_5.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"></a>
                                         
                                     
@@ -358,6 +365,13 @@
 
 
 
+
+    <script>
+        function handleClick(event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        // Outras ações que você pode querer executar quando o link é clicado
+    }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

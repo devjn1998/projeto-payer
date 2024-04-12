@@ -154,6 +154,17 @@ div.alinhamento {
     padding-bottom: 28px;
 }
 
+.cunstom-rounded-left {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cunstom-rounded-right {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
 /*Seção nossos serviços*/
 
 
@@ -177,6 +188,10 @@ section#nosso-contato {
 
 
 
+}
+
+section#nossa-apresentacao {
+    height: 520px;
 }
 
 /*Seção de contato*/
@@ -266,6 +281,7 @@ section#nosso-contato {
 .tres-colunas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-top: 28px;
 }
 
 .duas-colunas {
@@ -280,7 +296,6 @@ section#nosso-contato {
     .card-tab {
         display: flex;
         justify-content: flex-start;
-        padding-top: 12px;
     }
 }
 
@@ -291,7 +306,9 @@ section#nosso-contato {
     align-items: center;
     text-align: center;
     border-radius: 0;
-    height: 20rem;
+    height: 28rem;
+    margin-top: 12px;
+    padding-top: 12px;
 
     .icon-size {
         width: 58px;
@@ -326,6 +343,7 @@ section#nosso-contato {
 
 aside {
     width: 90%;
+    margin-top: 12px;
 }
 
 
@@ -350,6 +368,48 @@ aside {
     background-color: variaveis.$corDetalhes;
 }
 
+.card-tab div {
+    padding: 28px 18px 28px 18px;
+}
+
+
+/* balão de mensagem */
+
+@mixin tooltip($posicao: right, $largura: auto) {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        .tooltip {
+            visibility: visible;
+            opacity: 1;
+            left: 48%;
+            top: 0;
+        }
+    }
+
+    .tooltip {
+        visibility: hidden;
+        width: 12.5rem;
+        background-color: variaveis.$corPrincipal;
+        color: variaveis.$corDeFundo;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px;
+        position: absolute;
+        z-index: 1;
+        transition: opacity 0.3s;
+    }
+
+}
+
+.imagem {
+    @include tooltip(right, 120px)
+}
+
+
+
 
 /*Rodapé*/
 
@@ -363,15 +423,6 @@ footer {
     }
 }
 
-.cunstom-rounded-left {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.cunstom-rounded-right {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
 
 
 /*BreakPoints*/
@@ -379,18 +430,15 @@ footer {
 @media (max-width: 1398px) {
     div.tres-colunas {
         .row {
-            padding: 8px 2px 8px 2px;
+            padding: 28px 10px 28px 10px;
 
         }
 
         h2 {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
     }
 }
-
-
-
 
 @media (max-width: 1024px) {
     .servicos {
@@ -399,7 +447,6 @@ footer {
         row-gap: 2rem;
         text-align: center;
     }
-
 
     .duas-colunas {
         display: grid;
@@ -418,36 +465,33 @@ footer {
         }
     }
 
-    .tab-pane {
-        padding: 20px;
-    }
-
     .card-tab {
         font-size: 0.9rem;
     }
-
-
 
     ul.nav.nav-pills {
         padding-right: 68px;
     }
 
     section#nossa-apresentacao {
+        height: 780px;
 
         .card,
         .card-tab {
-            height: 450px;
+            height: 550px;
         }
     }
 
     .tres-colunas {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 0;
+        padding: 28px 18px 28px 18px;
+
+
     }
 
     .card-tab div {
-        padding: 10px;
+        padding: 28px 18px 28px 18px;
     }
 
     div.container {
@@ -457,12 +501,11 @@ footer {
 
 @media (max-width: 990px) {
     header {
-        ul.nav.nav-pills
-            {
-                padding: 0px;
-            }
-        a.nav-link
-        {
+        ul.nav.nav-pills {
+            padding: 0px;
+        }
+
+        a.nav-link {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -471,9 +514,6 @@ footer {
         .nav-pills {
             transition: none;
             opacity: 1;
-            
-            
-            
 
             &:hover {
                 opacity: 1;
@@ -482,272 +522,316 @@ footer {
     }
 }
 
-
-
-
-
-
-
-    @media (max-width: 767px) {
-        .servicos {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            text-align: center;
-        }
-
-        img.logo-fn-img-fluid {
-            padding-left: 0;
-        }
-
-        ul.nav.nav-pills {
-            padding: 18px;
-        }
-
-        form.card {
-            width: 100%;
-        }
-
-        .font-text {
-            font-size: 1.2rem;
-            font-weight: bolder;
-            color: variaveis.$corDeFundo;
-            text-shadow: 2px 2px 4px black;
-        }
-
-        .img-size {
-            height: 372px;
-
-        }
-
-        .duas-colunas {
-            display: grid;
-            grid-template-columns: repeat(1, 2fr);
-        }
-
-        .card-tab {
-            display: flex;
-            height: 14rem;
-            text-align: center;
-            align-items: center;
-
-            h2,
-            p {
-                font-size: 0.9rem;
-                padding-bottom: 8px;
-                padding-top: 8px;
-                margin-bottom: 0;
-            }
-
-            h2.borda {
-                font-size: 1.7rem;
-            }
-        }
-
-        aside {
-            width: 100%;
-            text-align: center;
-        }
-
-        section#nossa-apresentacao {
-
-            .card,
-            .card-tab {
-                height: 450px;
-                justify-content: center;
-            }
-
-            .img-responsize {
-                display: none;
-            }
-        }
-
-        .tres-colunas {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            padding-top: 10px;
-        }
-
-        div.container {
-            height: 700px;
-        }
-
-        .cunstom-rounded-right {
-            display: none;
-        }
-
-
+@media (max-width: 767px) {
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
     }
 
-    @media (max-width: 425px) {
-        .servicos {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            text-align: center;
-        }
+    img.logo-fn-img-fluid {
+        padding-left: 0;
+    }
 
-        img.logo-fn {
-            padding: 5px !important;
-        }
+    ul.nav.nav-pills {
+        padding: 18px;
+    }
 
+    form.card {
+        width: 100%;
+    }
 
-        ul.nav.nav-pills {
-            padding: 18px;
-        }
+    .font-text {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        color: variaveis.$corDeFundo;
+        text-shadow: 2px 2px 4px black;
+    }
 
-        .font-text {
+    .img-size {
+        height: 372px;
+    }
+
+    .duas-colunas {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .card-tab {
+        display: flex;
+        height: 14rem;
+        text-align: center;
+        align-items: center;
+
+        h2,
+        p {
             font-size: 0.9rem;
-            font-weight: bolder;
-            color: variaveis.$corDeFundo;
-            text-shadow: 2px 2px 4px variaveis.$corPrincipal;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            margin-bottom: 0;
         }
 
-        header img {
-            width: 50%;
+        h2.borda {
+            font-size: 1.7rem;
         }
-
-        form.card {
-            width: 100%;
-        }
-
-        header a {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        button.navbar-toggler {
-            width: 13%;
-        }
-
-        #button-navbar {
-            width: 100%;
-        }
-
-        .img-size {
-            height: 280px;
-        }
-
-        .card-tab {
-            h2 {
-                font-size: 1rem;
-                padding-bottom: 8px;
-            }
-
-            p {
-                padding-top: 8px;
-                font-size: 1rem;
-            }
-        }
-
-        aside {
-            width: 100%;
-        }
-
-
-
-        section#nossa-apresentacao {
-
-            .card,
-            .card-tab {
-                height: 450px;
-                justify-content: center;
-            }
-
-            .img-responsize {
-                display: none;
-            }
-        }
-
-        .tres-colunas {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        div.container {
-            height: 700px;
-        }
-
-        .cunstom-rounded-right {
-            display: none;
-        }
-
-
     }
 
-    @media (max-width: 380px) {
+    aside {
+        width: 100%;
+        text-align: center;
+    }
 
-        #valores-size {
-            padding: 0;
-        }
+    section#nossa-apresentacao {
+        height: 830px;
 
-        #cabecalho {
-            display: flex;
+        .card,
+        .card-tab {
+            height: 600px;
             justify-content: center;
         }
 
-        button.navbar-toggler {
-            width: 20%;
-
-            &:hover {
-                background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
-            }
+        .img-responsize {
+            display: none;
         }
+    }
 
-        #button-navbar {
-            width: 100%;
-        }
+    .tres-colunas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 0px;
+    }
 
-        header img {
-            width: 70%;
-        }
+    div.container {
+        height: 700px;
+    }
 
-        .font-text {
-            font-size: 0.8rem;
-            font-weight: bolder;
-            width: 100%;
-            padding: 0
-        }
+    .cunstom-rounded-right {
+        display: none;
+    }
 
-        .img-size {
-            height: 240px;
-        }
+    div#imgdiv {
+        display: none;
+    }
 
-        img.logo-fn {
-            padding: 0 !important;
+    div#imgdiv.col-md-6.card-tab {
+        display: none;
+    }
+
+    div.tres-colunas .row {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 590px) {
+    .imagem .tooltip {
+        width: 8rem;
+        font-size: 0.6rem;
+    }
+
+    section#nossa-apresentacao {
+        .duas-colunas {
+            justify-content: center;
         }
 
         .card-tab {
-
-            h2 {
-                font-size: 0.7rem;
-            }
-
-            p {
-                font-size: 0.7rem;
-            }
+            width: 100%;
         }
-
-        div.container {
-            width: 300px;
-            height: 700px;
-        }
-
-
-        section#nossa-apresentacao {
-            .img-responsize {
-                display: none;
-            }
-        }
-
-
-        .tres-colunas {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        .tab-pane {
-            padding: 0;
-        }
-
-
-
     }
+
+    .imagem .tooltip {
+        width: 4.9rem;
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .servicos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    img.logo-fn {
+        padding: 5px !important;
+    }
+
+
+    ul.nav.nav-pills {
+        padding: 18px;
+    }
+
+    .font-text {
+        font-size: 0.9rem;
+        font-weight: bolder;
+        color: variaveis.$corDeFundo;
+        text-shadow: 2px 2px 4px variaveis.$corPrincipal;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    form.card {
+        width: 100%;
+    }
+
+    header a {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button.navbar-toggler {
+        width: 13%;
+    }
+
+    #button-navbar {
+        width: 100%;
+    }
+
+    .img-size {
+        height: 280px;
+    }
+
+    .card-tab {
+        h2 {
+            font-size: 1rem;
+            padding-bottom: 8px;
+        }
+
+        p {
+            padding-top: 8px;
+            font-size: 1rem;
+        }
+    }
+
+    aside {
+        width: 100%;
+    }
+
+
+
+    section#nossa-apresentacao {
+        height: 800px;
+
+        .card,
+        .card-tab {
+            height: 500px;
+            margin-top: 28px;
+            justify-content: center;
+        }
+
+        .img-responsize {
+            display: none;
+        }
+    }
+
+    .tres-colunas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    div.container {
+        height: 700px;
+    }
+
+    .cunstom-rounded-right {
+        display: none;
+    }
+
+    .imagem .tooltip {
+        width: 6rem;
+        font-size: 0.6rem;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+
+    #valores-size {
+        padding: 0;
+    }
+
+    #cabecalho {
+        display: flex;
+        justify-content: center;
+    }
+
+    button.navbar-toggler {
+        width: 20%;
+
+        &:hover {
+            background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
+        }
+    }
+
+    #button-navbar {
+        width: 100%;
+    }
+
+    header img {
+        width: 70%;
+    }
+
+    .font-text {
+        font-size: 0.8rem;
+        font-weight: bolder;
+        width: 100%;
+        padding: 0
+    }
+
+    .img-size {
+        height: 240px;
+    }
+
+    img.logo-fn {
+        padding: 0 !important;
+    }
+
+    .card-tab {
+
+        h2 {
+            font-size: 0.7rem;
+        }
+
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
+    div.container {
+        width: 300px;
+        height: 700px;
+    }
+
+
+    section#nossa-apresentacao {
+        height: 900px;
+
+        .img-responsize {
+            display: none;
+        }
+
+        .card-tab {
+            width: 100%;
+            height: 600px;
+        }
+    }
+
+
+    .tres-colunas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tab-pane {
+        padding: 0;
+    }
+
+    .imagem .tooltip {
+        width: 5rem;
+        font-size: 0.6rem;
+    }
+
+
+}
