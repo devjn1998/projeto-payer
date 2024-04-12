@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="build/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -22,42 +27,41 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-lg sticky-top p-1" id="cabecalho">
         <a href="#" class="">
             <img src="source/img/logo/logo_fn6.png" alt="logo_fn_agenciamentos" class="logo-fn img-fluid">
-            
+
         </a>
         <button class="navbar-toggler mb-2 bg-transparent navbar-dark" type="button" data-bs-toggle="collapse"
-                data-bs-target="#menu-navegacao" aria-controls="menu-navegacao" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span id="button-navbar" class="navbar-toggler-icon text-light"></span>
-            </button>
-
+            data-bs-target="#menu-navegacao" aria-controls="menu-navegacao" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span id="button-navbar" class="navbar-toggler-icon text-light"></span>
+        </button>
 
         <nav class="collapse navbar-collapse justify-content-between w-100" id="menu-navegacao">
             <ul class="nav nav-pills flex-column flex-lg-row justify-content-end w-100">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="/index.html" class="nav-link active scroll-link">
                         <span style="font-size: 14px;">EMPRESA</span>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link scroll-link">
                         <span style="font-size: 14px;">RESPONSABILIDADE SOCIAL</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link scroll-link">
                         <span style="font-size: 14px;">SERVIÇOS</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#" class="nav-link scroll-link">
                         <span style="font-size: 14px;">CLIENTES</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/contato.html" class="nav-link scroll-link">
                         <span style="font-size: 14px;">CONTATO</span>
                     </a>
                 </li>
@@ -65,16 +69,13 @@
         </nav>
     </header>
 
-
-
-
-
     <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-scroll="true">
         <section id="carousel_apresentacao">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img class="d-block w-100 mask-transparent" src="/source/img/slide/slide_1.jpg" alt="slide_1">
+                <div class="carousel-inner col-sm-10">
+                    <div class="carousel-item active " data-bs-interval="3000">
+                        <img class="d-block w-100 mask-transparent img-size" src="/source/img/slide/slide_1.png"
+                            alt="slide_1">
                         <div class="carousel-caption">
                             <h2 class="fw-bolder"><span class="font-text">Alcance Novos
                                     Horizontes</span></h2>
@@ -85,7 +86,8 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img class="d-block w-100 mask-transparent" src="/source/img/slide/slide_2.jpg" alt="slide_2">
+                        <img class="d-block w-100 mask-transparent img-size" src="/source/img/slide/slide_2.png"
+                            alt="slide_2">
                         <div class="carousel-caption">
                             <h2 class="fw-bolder"><span class="font-text">Segurança
                                     em Primeiro Lugar</span></h2>
@@ -97,7 +99,8 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img class="d-block w-100 mask-transparent" src="/source/img/slide/slide_3.jpg" alt="slide_3">
+                        <img class="d-block w-100 mask-transparent img-size" src="/source/img/slide/slide_3.png"
+                            alt="slide_3">
                         <div class="carousel-caption">
                             <h2 class="fw-bolder"><span class="font-text">Eficiência Oceânica</span>
                             </h2>
@@ -108,134 +111,223 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+            </div>
+        </section>
 
-                <div class="carousel-indicators">
-                    <button class="active" data-bs-target="#carousel" data-bs-slide-to="0" type="button"></button>
-                    <button data-bs-target="#carousel" data-bs-slide-to="1" type="button"></button>
-                    <button data-bs-target="#carousel" data-bs-slide-to="2" type="button"></button>
+
+        <section style="padding-top: 28px; padding-bottom: 28px;" id="empresa">
+            <div class="container-md">
+                <h2 style="margin-bottom: 48px;">
+                    <span class="borda">NOSSOS SERVIÇOS</span>
+                </h2>
+                <div class="servicos">
+                    <articles class="quem-somos card">
+                        <a href="#">
+                            <span>
+                                <img style="width: 68px; margin-top: 28px;" src="/source/img/icons/cargo-ship.png"
+                                    alt="">
+                            </span>
+                        </a>
+                        <h2 class="h5">Agenciamento
+                            Marítimo</h2>
+                        <p style="font-weight: 300; padding: 8px;">
+                            Somos uma ponte confiável entre sua empresa e as águas desafiadoras da indústria offshore.
+                            Como
+                            líderes em agenciamento marítimo, nossa missão é simplificar suas operações, tornando-as
+                            mais
+                            seguras, eficientes e lucrativas.
+                        </p>
+
+
+                    </articles>
+                    <articles class="descubra card">
+                        <a href="#">
+                            <span>
+                                <img style="width: 68px; margin-top: 28px;"
+                                    src="/source/img/icons/enterprise-architecture.png" alt="">
+                            </span>
+                        </a>
+                        <h2 class="h5">Gerenciamento
+                            de Supply Chain</h2>
+                        <p style="font-weight: 300; padding: 8px;">
+                            Na era da globalização, um gerenciamento eficaz da Supply Chain é essencial para o sucesso
+                            de
+                            qualquer empresa. Por isso, entendemos a importância de uma cadeia de suprimentos eficiente
+                            e de
+                            operações logísticas ágeis para atender a todas as demandas.
+                        </p>
+                    </articles>
+                    <articles class="descubra card">
+                        <a href="#">
+                            <span>
+                                <img style="width: 68px; margin-top: 28px;" src="/source/img/icons/planning.png" alt="">
+                            </span>
+                        </a>
+                        <h2 class="h5">Gerenciamento
+                            de Projetos</h2>
+                        <p style="font-weight: 300; padding: 8px;">
+                            Com ampla experiência, não apenas gerenciamos projetos; nós os dominamos. Aplicamos nosso
+                            conhecimento, habilidades e técnicas para garantir que cada projeto seja executado com
+                            eficácia
+                            e excelência.
+                        </p>
+                    </articles>
+                    <articles class="descubra card">
+                        <a href="#">
+                            <span>
+                                <img style="width: 68px; margin-top: 28px;" src="/source/img/icons/strategy.png" alt="">
+                            </span>
+                        </a>
+                        <h2 class="h5">Assessoria
+                            Estratégica</h2>
+                        <p style="font-weight: 300; padding: 8px;">
+                            No mercado de petróleo e gás, a excelência nas atividades de suporte à operação é
+                            fundamental .
+                            É por isso que a eficiência em todos os elos da cadeia é crucial. Por isso forneça suporte
+                            completo para a gestão da cadeia de abastecimento.
+                        </p>
+                    </articles>
+                </div>
+                <div class="container-md alinhamento borda-2">
+                    <button class="btn-servicos" type="button">NOSSOS SERVIÇOS <span><img
+                                src="/source/img/icons/right-arrow.png" alt=""></span></button>
                 </div>
             </div>
         </section>
+
+        <section class="borda-2" id="nossa-apresentacao">
+            <div class="container">
+                <div class="duas-colunas">
+                    <aside>
+                        <nav class="nav nav-pills flex-column">
+                            <button class="btn-apresentacao" data-bs-toggle="tab" data-bs-target="#missao">NOSSA
+                                MISSAO</button>
+                            <button class="btn-apresentacao" data-bs-toggle="tab" data-bs-target="#visao">VISAO</button>
+                            <button class="btn-apresentacao" data-bs-toggle="tab"
+                                data-bs-target="#proposito">PROPÓSITO</button>
+                            <button class="btn-apresentacao" data-bs-toggle="tab"
+                                data-bs-target="#valores">VALORES</button>
+                        </nav>
+                    </aside>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="missao">
+                            <div class="row">
+                                <div class="col-md-6 card card-tab">
+                                    <h2>NOSSA MISSAO</h2>
+                                    <p>Fornecer soluções eficientes e confiáveis ​​no segmento de agenciamento e
+                                        assessoria marítima, oferecendo serviços de alta qualidade que atendem às
+                                        necessidades específicas de nossos clientes, garantindo transparência e
+                                        qualidade em todas as etapas do processo.</p>
+                                </div>
+                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                    <a href="#"
+                                        class="img-responsize" style="background-image: url('source/img/slide/slide_7.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"
+                                        class="card card-tab"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="visao">
+                            <div class="row">
+                                <div class="col-md-6 card card-tab">
+                                    <h2>NOSSA VISÃO</h2>
+                                    <p>Ser reconhecida como a principal empresa de agenciamento marítimo no Brasil
+                                        estabelecendo um alto padrão de excelência e inovação no setor.</p>
+                                </div>
+                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                    <a href="#"
+                                        class="img-responsize" style="background-image: url('source/img/slide/slide_8.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"
+                                        class="card card-tab"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="proposito">
+                            <div class="row">
+                                <div class="col-md-6 card card-tab">
+                                    <h2>NOSSO PROPÓSITO</h2>
+                                    <p>Navegar com nossos clientes em todos os seus projetos, impulsionando a conectividade global por meio do agenciamento marítimo.</p>
+                                </div>
+                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                    <a href="#"
+                                        class="img-responsize" style="background-image: url('source/img/slide/slide_6.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"
+                                        class="card card-tab"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="valores">
+                            <div class="row">
+                                <div id="valores-size" class="col-md-6 card card-tab">
+                                    <h2>NOSSOS VALORES</h2>
+                                    <div class="tres-colunas">
+                                        <div class="row">
+                                            <a href="#">
+                                                <img style="width: 58px;" src="/source/img/icons/trust.png" alt="trust">
+                                            </a>
+                                            <h2 class="h6">
+                                                CONFIANÇA
+                                            </h2>
+                                        </div>
+                                        <div class="row">
+                                            <a href="#">
+                                                <img style="width: 58px;" src="/source/img/icons/security.png" alt="trust">
+                                            </a>
+                                            <h2 class="h6">
+                                                SEGURANÇA
+                                            </h2>
+                                        </div>
+                                        <div class="row">
+                                            <a href="#">
+                                                <img style="width: 58px;" src="/source/img/icons/honesty.png" alt="trust">
+                                            </a>
+                                            <h2 class="h6">
+                                                LEALDADE
+                                            </h2>
+                                        </div>
+                                        <div class="row">
+                                            <a href="#">
+                                                <img style="width: 58px;" src="/source/img/icons/data-integration.png" alt="trust">
+                                            </a>
+                                            <h2 class="h6">
+                                                INTEGRIDADE
+                                            </h2>
+                                        </div>
+                                        <div class="row">
+                                            <a href="#">
+                                                <img style="width: 58px;" src="/source/img/icons/diversity.png" alt="trust">
+                                            </a>
+                                            <h2 class="h6">
+                                                DIVERSIDADE
+                                            </h2>
+                                        </div>
+                                        <div class="row">
+                                            <a href="#">
+                                                <img style="width: 58px;" src="/source/img/icons/competition.png" alt="trust">
+                                            </a>
+                                            <h2 class="h6">
+                                                EXCELÊNCIA
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div style="padding: 0;" class="col-md-6 card-tab">
+                                    <a class="img-responsize" style="background-image: url('source/img/slide/slide_5.jpg'); width: 100%; height: 100%; background-size: cover; background-position: center;"
+                                    class="card card-tab"></a>
+                                        
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+        </section>
+
     </div>
 
-    <section style="padding-top: 28px;"id="nossos-servicos">
-        <div class="container-md">
-            <h2 style="margin-bottom: 48px;">
-                <span class="borda">NOSSOS SERVIÇOS</span>
-            </h2>
-            <div class="servicos">
-                <articles class="quem-somos card">
-                    <a href="#">
-                        <span>
-                            <img style="width: 68px; margin-top: 28px;" src="/source/img/icons/cargo-ship.png" alt="">
-                        </span>
-                    </a>
-                    <h2 class="h5">Agenciamento
-                        Marítimo</h2>
-                    <p style="font-weight: 300; padding: 8px;">
-                        Somos uma ponte confiável entre sua empresa e as águas desafiadoras da indústria offshore. Como
-                        líderes em agenciamento marítimo, nossa missão é simplificar suas operações, tornando-as mais
-                        seguras, eficientes e lucrativas.
-                    </p>
-
-
-                </articles>
-                <articles class="descubra card">
-                    <a href="#">
-                        <span>
-                            <img style="width: 68px; margin-top: 28px;"
-                                src="/source/img/icons/enterprise-architecture.png" alt="">
-                        </span>
-                    </a>
-                    <h2 class="h5">Gerenciamento
-                        de Supply Chain</h2>
-                    <p style="font-weight: 300; padding: 8px;">
-                        Na era da globalização, um gerenciamento eficaz da Supply Chain é essencial para o sucesso de
-                        qualquer empresa. Por isso, entendemos a importância de uma cadeia de suprimentos eficiente e de
-                        operações logísticas ágeis para atender a todas as demandas.
-                    </p>
-                </articles>
-                <articles class="descubra card">
-                    <a href="#">
-                        <span>
-                            <img style="width: 68px; margin-top: 28px;" src="/source/img/icons/planning.png" alt="">
-                        </span>
-                    </a>
-                    <h2 class="h5">Gerenciamento
-                        de Projetos</h2>
-                    <p style="font-weight: 300; padding: 8px;">
-                        Com ampla experiência, não apenas gerenciamos projetos; nós os dominamos. Aplicamos nosso
-                        conhecimento, habilidades e técnicas para garantir que cada projeto seja executado com eficácia
-                        e excelência.
-                    </p>
-                </articles>
-                <articles class="descubra card">
-                    <a href="#">
-                        <span>
-                            <img style="width: 68px; margin-top: 28px;" src="/source/img/icons/strategy.png" alt="">
-                        </span>
-                    </a>
-                    <h2 class="h5">Assessoria
-                        Estratégica</h2>
-                    <p style="font-weight: 300; padding: 8px;">
-                        No mercado de petróleo e gás, a excelência nas atividades de suporte à operação é fundamental .
-                        É por isso que a eficiência em todos os elos da cadeia é crucial. Por isso forneça suporte
-                        completo para a gestão da cadeia de abastecimento.
-                    </p>
-                </articles>
-            </div>
-            <div class="container-md alinhamento">
-                <button class="btn-servicos" type="button">NOSSOS SERVIÇOS <span><img
-                            src="/source/img/icons/right-arrow.png" alt=""></span></button>
-            </div>
-        </div>
-    </section>
-
-    <section id="nosso-contato">
-        <div class="container-md">
-            <h2 style="margin-bottom: 48px;">
-                <span class="borda">FALE CONOSCO</span>
-            </h2>
-
-            <div class="align">
-                <form class="card">
-                    <div class="form-campo">
-                        <label for="nome">Seu nome: </label>
-                        <input type="text" name="nome" id="nome">
-                    </div>
-                    <div class="form-campo">
-                        <label for="email">Seu e-mail: </label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div class="form-campo">
-                        <label for="telefone">Seu telefone: </label>
-                        <input type="tel" name="telefone" id="telefone">
-                    </div>
-                    <div class="form-campo">
-                        <label for="mensagem">Mensagem: </label>
-                        <textarea name="mensagem" id="mensagem"></textarea>
-                    </div>
-                    <div class="alinhamento">
-                        <button class="btn-contato" type="submit">Enviar <span><img
-                                    style="width: 18px; margin-left: 8px; text-align: center;"
-                                    src="/source/img/icons/email.png" alt=""></span></button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </section>
-
-
-    <footer id="ft" class="footer bg-dark text-light py-4 container">
+    <footer id="ft" class="footer bg-dark text-light pt-3 justify-content-center">
         <div class="container-flex">
-            <p class="fw-bold">2024 &copy; FN AGENCIAMENTOS MARÍTMOS - TODOS OS DIREITOS RESERVADOS &copy;</p>
+            <p class="fw-bold text-center">2024 &copy; FN AGENCIAMENTOS MARÍTMOS - TODOS OS DIREITOS RESERVADOS &copy;
+            </p>
         </div>
 
         <ul style="display: grid; grid-template-columns: repeat(3, 1fr);">
@@ -271,7 +363,6 @@
 
 
 
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -281,6 +372,8 @@
     <script src="source/lib/js/jquery.validate.min.js"></script>
     <script src="source/lib/js/messages_pt_BR.min.js"></script>
     <script src="source/lib/js/main.js"></script>
+
+
 
 </body>
 
