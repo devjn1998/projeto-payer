@@ -89,6 +89,8 @@ header {
 .font-text {
     font-family: variaveis.$fontCarousel;
     font-weight: bolder;
+    color: variaveis.$corDeFundo;
+    text-shadow: 3px 3px 5px variaveis.$corPrincipal;
 }
 
 
@@ -137,12 +139,7 @@ div.alinhamento {
 
 .carousel-caption {
     color: variaveis.$corPrincipal;
-    text-transform: uppercase;
-    top: 0;
-    bottom: auto;
-    transform: translateY(0%);
-    height: 100%;
-
+    text-transform: uppercase
 }
 
 /*Borda detalhes*/
@@ -162,15 +159,8 @@ div.alinhamento {
 
 section#nossos-servicos,
 section#nosso-contato {
-
-
     padding-bottom: 68px;
-    // border-bottom: 0.6em solid variaveis.$corPrincipal;
-
     background: variaveis.$corDeFundo;
-
-
-
 }
 
 .servicos {
@@ -371,8 +361,34 @@ footer {
         list-style: none;
         margin-right: 8px;
     }
-
 }
+
+.cunstom-rounded-left {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cunstom-rounded-right {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/*BreakPoints*/
+
+@media (max-width: 1398px) {
+    div.tres-colunas {
+        .row {
+            padding: 8px 2px 8px 2px;
+
+        }
+
+        h2 {
+            font-size: 0.9rem;
+        }
+    }
+}
+
 
 
 
@@ -439,253 +455,299 @@ footer {
     }
 }
 
+@media (max-width: 990px) {
+    header {
+        ul.nav.nav-pills
+            {
+                padding: 0px;
+            }
+        a.nav-link
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-pills {
+            transition: none;
+            opacity: 1;
+            
+            
+            
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
 
 
 
 
 
 
-@media (max-width: 767px) {
-    .servicos {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
+
+    @media (max-width: 767px) {
+        .servicos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+        }
+
+        img.logo-fn-img-fluid {
+            padding-left: 0;
+        }
+
+        ul.nav.nav-pills {
+            padding: 18px;
+        }
+
+        form.card {
+            width: 100%;
+        }
+
+        .font-text {
+            font-size: 1.2rem;
+            font-weight: bolder;
+            color: variaveis.$corDeFundo;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .img-size {
+            height: 372px;
+
+        }
+
+        .duas-colunas {
+            display: grid;
+            grid-template-columns: repeat(1, 2fr);
+        }
+
+        .card-tab {
+            display: flex;
+            height: 14rem;
+            text-align: center;
+            align-items: center;
+
+            h2,
+            p {
+                font-size: 0.9rem;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                margin-bottom: 0;
+            }
+
+            h2.borda {
+                font-size: 1.7rem;
+            }
+        }
+
+        aside {
+            width: 100%;
+            text-align: center;
+        }
+
+        section#nossa-apresentacao {
+
+            .card,
+            .card-tab {
+                height: 450px;
+                justify-content: center;
+            }
+
+            .img-responsize {
+                display: none;
+            }
+        }
+
+        .tres-colunas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 10px;
+        }
+
+        div.container {
+            height: 700px;
+        }
+
+        .cunstom-rounded-right {
+            display: none;
+        }
+
+
     }
 
-    img.logo-fn-img-fluid {
-        padding-left: 0;
+    @media (max-width: 425px) {
+        .servicos {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+        }
+
+        img.logo-fn {
+            padding: 5px !important;
+        }
+
+
+        ul.nav.nav-pills {
+            padding: 18px;
+        }
+
+        .font-text {
+            font-size: 0.9rem;
+            font-weight: bolder;
+            color: variaveis.$corDeFundo;
+            text-shadow: 2px 2px 4px variaveis.$corPrincipal;
+        }
+
+        header img {
+            width: 50%;
+        }
+
+        form.card {
+            width: 100%;
+        }
+
+        header a {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button.navbar-toggler {
+            width: 13%;
+        }
+
+        #button-navbar {
+            width: 100%;
+        }
+
+        .img-size {
+            height: 280px;
+        }
+
+        .card-tab {
+            h2 {
+                font-size: 1rem;
+                padding-bottom: 8px;
+            }
+
+            p {
+                padding-top: 8px;
+                font-size: 1rem;
+            }
+        }
+
+        aside {
+            width: 100%;
+        }
+
+
+
+        section#nossa-apresentacao {
+
+            .card,
+            .card-tab {
+                height: 450px;
+                justify-content: center;
+            }
+
+            .img-responsize {
+                display: none;
+            }
+        }
+
+        .tres-colunas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        div.container {
+            height: 700px;
+        }
+
+        .cunstom-rounded-right {
+            display: none;
+        }
+
+
     }
 
-    ul.nav.nav-pills {
-        padding: 18px;
-    }
+    @media (max-width: 380px) {
 
-    form.card {
-        width: 100%;
-    }
+        #valores-size {
+            padding: 0;
+        }
 
-    .font-text {
-        font-size: 1.2rem;
-        font-weight: bolder;
-        color: variaveis.$corPrincipal;
-    }
+        #cabecalho {
+            display: flex;
+            justify-content: center;
+        }
 
-    .img-size {
-        height: 100%;
-    }
+        button.navbar-toggler {
+            width: 20%;
 
-    .duas-colunas {
-        display: grid;
-        grid-template-columns: repeat(1, 2fr);
-    }
+            &:hover {
+                background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
+            }
+        }
 
-    .card-tab {
-        display: flex;
-        height: 14rem;
-        text-align: center;
-        align-items: center;
+        #button-navbar {
+            width: 100%;
+        }
 
-        h2,
-        p {
+        header img {
+            width: 70%;
+        }
+
+        .font-text {
             font-size: 0.8rem;
-            padding-bottom: 0;
-            margin-bottom: 0;
+            font-weight: bolder;
+            width: 100%;
+            padding: 0
         }
-    }
 
-    aside {
-        width: 100%;
-        text-align: center;
-    }
+        .img-size {
+            height: 240px;
+        }
 
-    section#nossa-apresentacao {
+        img.logo-fn {
+            padding: 0 !important;
+        }
 
-        .card,
         .card-tab {
-            height: 450px;
-            justify-content: center;
-        }
-        .img-responsize {
-            display: none;
-        }
-    }
 
-    .tres-colunas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
+            h2 {
+                font-size: 0.7rem;
+            }
 
-    div.container {
-        height: 700px;
-    }
-
-
-
-}
-
-@media (max-width: 425px) {
-    .servicos {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        text-align: center;
-    }
-
-    img.logo-fn {
-        padding: 5px !important;
-    }
-
-
-    ul.nav.nav-pills {
-        padding: 18px;
-    }
-
-    .font-text {
-        font-size: 0.8rem;
-        font-weight: bolder;
-        color: variaveis.$corPrincipal;
-    }
-
-    header img {
-        width: 50%;
-    }
-
-    form.card {
-        width: 100%;
-    }
-
-    header a {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    button.navbar-toggler {
-        width: 13%;
-    }
-
-    #button-navbar {
-        width: 100%;
-    }
-
-    .img-size {
-        height: 280px;
-    }
-
-    .card-tab {
-        h2 {
-            font-size: 0.9rem;
+            p {
+                font-size: 0.7rem;
+            }
         }
 
-        p {
-            font-size: 0.9rem;
-        }
-    }
-
-    aside {
-        width: 100%;
-    }
-
-
-
-    section#nossa-apresentacao {
-
-        .card,
-        .card-tab {
-            height: 450px;
-            justify-content: center;
+        div.container {
+            width: 300px;
+            height: 700px;
         }
 
-        .img-responsize {
-            display: none;
-        }
-    }
 
-    .tres-colunas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    div.container {
-        height: 700px;
-    }
-
-
-}
-
-@media (max-width: 380px) {
-
-    #valores-size {
-        padding: 0;
-    }
-
-    #cabecalho {
-        display: flex;
-        justify-content: center;
-    }
-
-    button.navbar-toggler {
-        width: 20%;
-
-        &:hover {
-            background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
-        }
-    }
-
-    #button-navbar {
-        width: 100%;
-    }
-
-    header img {
-        width: 70%;
-    }
-
-    .font-text {
-        font-size: 0.8rem;
-        font-weight: bolder;
-        width: 100%;
-        padding: 0
-    }
-
-    .img-size {
-        height: 240px;
-    }
-
-    img.logo-fn {
-        padding: 0 !important;
-    }
-
-    .card-tab {
-
-        h2 {
-            font-size: 0.7rem;
+        section#nossa-apresentacao {
+            .img-responsize {
+                display: none;
+            }
         }
 
-        p {
-            font-size: 0.7rem;
+
+        .tres-colunas {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
-    }
 
-    div.container {
-        width: 300px;
-        height: 700px;
-    }
-
-
-    section#nossa-apresentacao {
-        .img-responsize {
-            display: none;
+        .tab-pane {
+            padding: 0;
         }
+
+
+
     }
-
-
-    .tres-colunas {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .tab-pane {
-        padding: 0;
-    }
-
-
-
-}
