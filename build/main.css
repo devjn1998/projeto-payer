@@ -163,6 +163,30 @@ section#nossa-apresentacao {
   height: 520px;
 }
 
+.duas-colunas-servicos-img {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-radius: 6px;
+  height: 18rem;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #273C75, #487eb0);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 28px;
+}
+.duas-colunas-servicos-img .h1-style {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #192A56;
+}
+.duas-colunas-servicos-img .a-img-size {
+  width: 20rem;
+  border-radius: 6px;
+}
+
 /*Seção de contato*/
 .align {
   text-align: center;
@@ -292,6 +316,12 @@ section#gerenciamento-projetos, section#acessoria {
 .duas-colunas {
   display: grid;
   grid-template-columns: 1fr 3fr;
+}
+
+/* Seção sobre-nos */
+section#sobre-nos img.a-img-size {
+  height: 16rem;
+  width: 16rem;
 }
 
 /* cards*/

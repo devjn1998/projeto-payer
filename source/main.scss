@@ -46,13 +46,10 @@ header {
         transition: opacity 1s ease;
         opacity: 0.5;
         padding-right: 68px;
-
         &:hover {
             opacity: 1;
         }
     }
-
-
 
     a.nav-link {
         background: variaveis.$corHeader;
@@ -62,15 +59,10 @@ header {
         align-items: center;
         border-radius: none;
         color: variaveis.$corDeFundo;
-
-
         &:hover {
             border-bottom: 3px solid variaveis.$corDetalhes;
             color: variaveis.$corDetalhes;
-
         }
-
-
     }
 
     .nav-pills .nav-link {
@@ -201,6 +193,34 @@ section#nosso-contato {
 
 section#nossa-apresentacao {
     height: 520px;
+}
+
+.duas-colunas-servicos-img
+{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-radius: 6px;
+    height: 18rem;
+    margin: 0 auto;
+    background: linear-gradient( to bottom, variaveis.$corSecundaria, variaveis.$corTerciaria);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 28px;
+
+    .h1-style {
+        font-family: variaveis.$fontCarousel;
+        color: white;
+        font-size: 3.5rem;
+        font-weight: bolder;
+        text-shadow: 2px 2px 4px variaveis.$corPrincipal;
+    }
+
+    .a-img-size
+    {
+        width: 20rem;
+        border-radius: 6px;
+    }
 }
 
 /*Seção de contato*/
@@ -362,6 +382,18 @@ section#gerenciamento-projetos, section#acessoria
 .duas-colunas {
     display: grid;
     grid-template-columns: 1fr 3fr;
+}
+
+
+/* Seção sobre-nos */
+
+section#sobre-nos
+{
+    img.a-img-size
+    {
+        height: 16rem;
+        width: 16rem;
+    }
 }
 
 
