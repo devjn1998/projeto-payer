@@ -228,7 +228,7 @@ section#nossa-apresentacao {
   background-color: #ccc;
 }
 .align .form-campo input::placeholder {
-  color: #ccc;
+  color: #cc;
   font-size: 0.8rem;
 }
 .align .form-campo textarea {
@@ -240,7 +240,7 @@ section#nossa-apresentacao {
   background-color: #F5F6FA;
   text-align: center;
   cursor: pointer;
-  color: #F5F6FA;
+  color: #192A56;
 }
 .align .form-campo textarea:focus {
   outline: none;

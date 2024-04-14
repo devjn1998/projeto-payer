@@ -270,7 +270,7 @@ section#nossa-apresentacao {
         }
 
         input::placeholder {
-            color: #ccc;
+            color:#cc;
             font-size: 0.8rem;
         }
 
@@ -283,7 +283,7 @@ section#nossa-apresentacao {
             background-color: variaveis.$corDeFundo;
             text-align: center;
             cursor: pointer;
-            color: variaveis.$corDeFundo;
+            color: variaveis.$corPrincipal;
 
 
             &:focus {
