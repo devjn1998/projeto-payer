@@ -220,6 +220,7 @@ section#nossa-apresentacao {
   background-color: #F5F6FA;
   border-radius: 6px;
   cursor: pointer;
+  color: #192A56;
 }
 .align .form-campo input:focus {
   outline: none;

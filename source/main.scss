@@ -259,6 +259,7 @@ section#nossa-apresentacao {
             background-color: variaveis.$corDeFundo;
             border-radius: 6px;
             cursor: pointer;
+            color: variaveis.$corPrincipal;
 
             &:focus {
                 outline: none;
