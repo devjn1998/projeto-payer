@@ -23,7 +23,8 @@ body {
     background: linear-gradient(to bottom, variaveis.$corDeFundo, #dcdde1)
 }
 
-h2, a {
+h2,
+a {
     font-family: variaveis.$fontCarousel;
 }
 
@@ -40,12 +41,13 @@ header {
     background: variaveis.$corHeader;
     display: flex;
 
-   
+
 
     .nav-pills {
         transition: opacity 1s ease;
         opacity: 0.5;
         padding-right: 68px;
+
         &:hover {
             opacity: 1;
         }
@@ -59,6 +61,7 @@ header {
         align-items: center;
         border-radius: none;
         color: variaveis.$corDeFundo;
+
         &:hover {
             border-bottom: 3px solid variaveis.$corDetalhes;
             color: variaveis.$corDetalhes;
@@ -195,14 +198,13 @@ section#nossa-apresentacao {
     height: 520px;
 }
 
-.duas-colunas-servicos-img
-{
+.duas-colunas-servicos-img {
     display: grid;
     grid-template-columns: 3fr 1fr;
     border-radius: 6px;
     height: 18rem;
     margin: 0 auto;
-    background: linear-gradient( to bottom, variaveis.$corSecundaria, variaveis.$corTerciaria);
+    background: linear-gradient(to bottom, variaveis.$corSecundaria, variaveis.$corTerciaria);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -216,8 +218,7 @@ section#nossa-apresentacao {
         text-shadow: 2px 2px 4px variaveis.$corPrincipal;
     }
 
-    .a-img-size
-    {
+    .a-img-size {
         width: 20rem;
         border-radius: 6px;
     }
@@ -258,16 +259,17 @@ section#nossa-apresentacao {
             background-color: variaveis.$corDeFundo;
             border-radius: 6px;
             cursor: pointer;
+
             &:focus {
                 outline: none;
             }
+
             &:hover {
                 background-color: #ccc;
             }
         }
 
-        input::placeholder
-        {
+        input::placeholder {
             color: #ccc;
             font-size: 0.8rem;
         }
@@ -304,50 +306,44 @@ section#nossa-apresentacao {
 
 /* Seção de Serviços */
 
-section#agenciamento-maritmo, section#gerenciamento,
-section#gerenciamento-projetos, section#acessoria
-{
+section#agenciamento-maritmo,
+section#gerenciamento,
+section#gerenciamento-projetos,
+section#acessoria {
     margin-bottom: 28px;
 }
 
-.descricao-servicos
-{
+.descricao-servicos {
     padding: 28px;
 }
 
-.agenciamento-maritimo
-{
+.agenciamento-maritimo {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     padding: 28px;
 
-    a
-    {
-        img
-        {
+    a {
+        img {
             width: 60px;
             margin-right: 20px;
         }
     }
 
-    .duas-colunas-servicos
-    {
+    .duas-colunas-servicos {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3%;
     }
 }
 
-.cor-destaque
-{
+.cor-destaque {
     font-weight: bolder;
     color: variaveis.$corPrincipal;
     font-family: variaveis.$fontCarousel;
 }
 
-.font-servicos
-{
+.font-servicos {
     font-family: variaveis.$fontCarousel;
     font-weight: 600;
 }
@@ -361,7 +357,7 @@ section#gerenciamento-projetos, section#acessoria
     margin-top: 12px;
     border: none;
     width: 11.8em;
-    
+
 
     &:hover {
         background-color: darken($color: variaveis.$corDetalhes, $amount: 10%);
@@ -387,13 +383,45 @@ section#gerenciamento-projetos, section#acessoria
 
 /* Seção sobre-nos */
 
-section#sobre-nos
-{
-    img.a-img-size
-    {
+section#sobre-nos {
+    img.a-img-size {
         height: 16rem;
         width: 16rem;
     }
+}
+
+/* Seção Trabalhe Conosco */
+section#trabalheconosco .font-text
+{
+    font-size: 1.4rem;
+    padding: 18px;
+}
+
+section#trabalheconosco .duas-colunas-servicos-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 43rem;
+    padding: 28px;
+}
+
+section#trabalheconosco .a-img-size
+{
+    height: 400px;
+    width: 550px;
+    border: 3px solid variaveis.$corDeFundo;
+}
+
+.font-pequena
+{
+    font-size: 1rem;
+}
+
+input#curriculo
+{
+    background-color: #fff;
 }
 
 
@@ -605,6 +633,43 @@ footer {
     div.container {
         height: 700px;
     }
+
+
+    .duas-colunas-servicos-img {
+        height: 12rem;
+
+        .h1-style {
+            font-size: 3rem;
+        }
+
+        .a-img-size
+        {
+            width: 12rem;
+        }
+
+        
+    }
+    section#sobre-nos img.a-img-size
+    {
+        width: 13rem;
+        height: 10rem;
+    }
+
+    section#trabalheconosco .duas-colunas-servicos-img
+    {
+        height: 39.9rem;
+    }
+
+    .align
+    {
+        form
+        {
+            height: 38.6rem;
+        }
+    }
+
+    
+
 }
 
 @media (max-width: 990px) {
@@ -628,9 +693,26 @@ footer {
             }
         }
     }
+
+    .duas-colunas-servicos-img {
+        height: 12rem;
+
+        .h1-style {
+            font-size: 2rem;
+        }
+
+        .a-img-size {
+            width: 12rem;
+        }
+    }
+
+    section#trabalheconosco .duas-colunas-servicos-img
+    {
+        height: 41.3rem;
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .servicos {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -728,7 +810,22 @@ footer {
     div.tres-colunas .row {
         padding: 20px;
     }
+
+
+    .agenciamento-maritimo .duas-colunas-servicos {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    section#trabalheconosco .duas-colunas-servicos-img
+    {
+        height: 45.3rem;
+        width: 37rem;
+    }
 }
+
+
+
 
 @media (max-width: 590px) {
     .imagem .tooltip {
@@ -750,6 +847,53 @@ footer {
         width: 4.9rem;
         font-size: 0.5rem;
     }
+
+    .duas-colunas-servicos-img {
+        height: 9rem;
+
+        .h1-style {
+            font-size: 1rem;
+        }
+
+        .a-img-size {
+            width: 9rem;
+        }
+    }
+
+    .font-servicos {
+        font-size: 0.8rem;
+    }
+
+    .cor-destaque
+    {
+        font-size: 0.8rem;
+    }
+
+    .agenciamento-maritimo .duas-colunas-servicos
+    {
+        gap: 1%;
+    }
+
+    section#sobre-nos img.a-img-size
+    {
+        width: 9rem;
+        height: 8rem;
+    }
+
+    section#trabalheconosco .a-img-size
+    {
+        width: 21.3rem;
+        height: 21.8rem;
+    }
+
+    section#trabalheconosco .duas-colunas-servicos-img
+    {
+        width: 25rem;
+        height: 49rem;
+        padding: 18px;
+    }
+
+
 }
 
 @media (max-width: 425px) {
@@ -796,7 +940,7 @@ footer {
         width: 100%;
     }
 
-    .img-size {
+    .img-size{
         height: 280px;
     }
 
@@ -851,10 +995,53 @@ footer {
         font-size: 0.6rem;
     }
 
+    .duas-colunas-servicos-img {
+        height: 9rem;
+
+        .h1-style {
+            font-size: 1rem;
+        }
+
+        .a-img-size{
+            width: 9rem;
+        }
+    }
+
+    section#sobre-nos img.a-img-size
+    {
+        width: 8rem;
+        height: 6rem;
+    }
+
+    section#trabalheconosco .a-img-size
+    {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    section#trabalheconosco .duas-colunas-servicos-img
+    {
+        width: 22rem;
+        height: 51rem;
+        padding: 18px;
+    }
 
 }
 
 @media (max-width: 380px) {
+
+    .duas-colunas-servicos-img {
+        height: 8rem;
+
+        .h1-style {
+            font-size: 0.9rem;
+        }
+
+        .a-img-size{
+            width: 8rem;
+        }
+    }
+
 
     #valores-size {
         padding: 0;
@@ -888,7 +1075,7 @@ footer {
         padding: 0
     }
 
-    .img-size {
+    .img-size{
         height: 240px;
     }
 
@@ -941,5 +1128,17 @@ footer {
         font-size: 0.6rem;
     }
 
+    section#trabalheconosco .a-img-size
+    {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    section#trabalheconosco .duas-colunas-servicos-img
+    {
+        width: 18rem;
+        height: 57rem;
+        padding: 18px;
+    }
 
 }

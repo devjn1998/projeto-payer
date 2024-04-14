@@ -45,7 +45,7 @@
                         <span style="font-size: 14px;">INÍCIO</span>
                     </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a href="/servicos.html" class="nav-link scroll-link">
                         <span style="font-size: 14px;">SERVIÇOS</span>
                     </a>
@@ -56,11 +56,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link scroll-link">
+                    <a href="/trabalheconosco.html" class="nav-link scroll-link">
                         <span style="font-size: 14px;">TRABALHE CONOSCO</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="/contato.html" class="nav-link active scroll-link">
                         <span style="font-size: 14px;">CONTATO</span>
                     </a>
@@ -121,9 +121,10 @@
                     <span class="borda">FALE CONOSCO</span>
                 </h2>
                 <div class="align">
-                    <form class="card">
+                    <form id="contato" class="card" action="https://formsubmit.co/contato@fnagenciamentos.com.br"
+                        method="POST">
                         <div class="form-campo">
-                            <label for="nome">Seu nome: </label>
+                            <label for="nome">nome: </label>
                             <input type="text" name="nome" id="nome">
                         </div>
                         <div class="form-campo">
@@ -143,7 +144,13 @@
                                         style="width: 18px; margin-left: 8px; text-align: center;"
                                         src="/source/img/icons/email.png" alt=""></span></button>
                         </div>
+
+                        <input type="hidden" name="_subject" value="Cliente entrando em contato">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
+
+
                 </div>
             </div>
         </section>
@@ -178,25 +185,6 @@
     </footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-        function handleClick(event) {
-            event.preventDefault(); // Impede o comportamento padrão do link
-            // Outras ações que você pode querer executar quando o link é clicado
-        }
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
