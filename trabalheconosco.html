@@ -138,7 +138,8 @@
                 </div>
                 <div class="align">
 
-                    <form class="card">
+                    <form id="trabalhe-conosco" class="card" action="https://formsubmit.co/contato@fnagenciamentos.com.br"
+                    method="POST" enctype="multipart/form-data">
                         <h2 class="p-4">Envie seu currículo !</h2>
                         <div class="form-campo">
                             <label for="nome">Seu nome: </label>
@@ -158,13 +159,17 @@
                         </div>
                         <div class="form-campo">
                             <label for="curriculo">Currículo</label>
-                            <input type="file" name="curriculo" id="curriculo">
+                            <input type="file" name="curriculo" id="curriculo" accept=".pdf">
                         </div>
                         <div class="alinhamento">
                             <button class="btn-contato" type="submit">Enviar <span><img
                                         style="width: 18px; margin-left: 8px; text-align: center;"
                                         src="/source/img/icons/email.png" alt=""></span></button>
                         </div>
+
+                        <input type="hidden" name="_subject" value="Alguém enviou um currículo">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
 
