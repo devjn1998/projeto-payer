@@ -229,7 +229,7 @@ section#nossa-apresentacao {
   background-color: #ccc;
 }
 .align .form-campo input::placeholder {
-  color: #cc;
+  color: #ccc;
   font-size: 0.8rem;
 }
 .align .form-campo textarea {
