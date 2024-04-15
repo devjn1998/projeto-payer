@@ -392,10 +392,39 @@ section#acessoria {
 
 section#sobre-nos {
     img.a-img-size {
-        height: 16rem;
-        width: 16rem;
+        height: auto;
+        width: 13rem;
+
+        border: 1px solid variaveis.$corDeFundo;
     }
 }
+
+section#sobre-nos .duas-colunas-servicos-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    p {
+        font-size: 1.3rem;
+        padding: 10px;
+        font-family: variaveis.$fontCarousel;
+    }
+}
+
+.duas-colunas-img {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1%;
+}
+
 
 /* Seção Trabalhe Conosco */
 section#trabalheconosco .font-text {
@@ -554,12 +583,23 @@ aside {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
 
     li {
         list-style: none;
         margin-right: 8px;
     }
+
+    p {
+        padding-top: 5px;
+    }
+}
+
+ul.ul-estilo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 
 
@@ -819,6 +859,19 @@ footer {
         height: 45.3rem;
         width: 37rem;
     }
+
+    section#sobre-nos .duas-colunas-servicos-img h1 {
+        font-size: 3rem;
+    }
+
+    .duas-colunas-img {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .descricao-servicos {
+        padding: 0;
+        margin-top: 1rem;
+    }
 }
 
 
@@ -885,6 +938,18 @@ footer {
         padding: 18px;
     }
 
+    section#sobre-nos .duas-colunas-servicos-img h1 {
+        font-size: 2rem;
+    }
+
+    .duas-colunas-img {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .descricao-servicos {
+        padding: 0;
+        margin-top: 1rem;
+    }
 
 }
 
@@ -1015,6 +1080,38 @@ footer {
         padding: 18px;
     }
 
+    section#sobre-nos .duas-colunas-servicos-img h1 {
+        font-size: 1.7rem;
+    }
+
+    .duas-colunas-img {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .descricao-servicos {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+
+    footer {
+        p {
+            font-size: 0.5rem;
+            text-align: center;
+            padding-top: 6px;
+        }
+    }
+
+
+    a {
+        .footer-logo {
+            width: 149px;
+        }
+    }
+
+    ul.ul-estilo {
+        display: none;
+    }
 }
 
 @media (max-width: 380px) {
@@ -1126,6 +1223,31 @@ footer {
         width: 18rem;
         height: 57rem;
         padding: 18px;
+    }
+
+    section#sobre-nos .duas-colunas-servicos-img h1 {
+        font-size: 1.2rem;
+    }
+
+    duas-colunas-servicos-img {
+        display: none;
+    }
+
+    section#sobre-nos .duas-colunas-servicos-img p {
+        font-size: 1rem;
+    }
+
+    .duas-colunas-img {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .descricao-servicos {
+        padding: 0;
+        margin-top: 1rem;
+    }
+
+    .ul-estilo {
+        display: none;
     }
 
 }
