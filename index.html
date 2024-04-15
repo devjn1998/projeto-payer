@@ -41,27 +41,27 @@
         <nav class="collapse navbar-collapse justify-content-between w-100" id="menu-navegacao">
             <ul class="nav nav-pills flex-column flex-lg-row justify-content-end w-100">
                 <li class="nav-item active">
-                    <a href="/#index.html" class="nav-link active scroll-link">
+                    <a href="/index.html" class="nav-link active scroll-link">
                         <span style="font-size: 14px;">INÍCIO</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/servicos.html" class="nav-link scroll-link">
+                    <a href="/servicos.html#agenciamento-maritmo" class="nav-link scroll-link">
                         <span style="font-size: 14px;">SERVIÇOS</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/sobrenos.html" class="nav-link scroll-link">
+                    <a href="/sobrenos.html#sobre-nos" class="nav-link scroll-link">
                         <span style="font-size: 14px;">SOBRE NÓS</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/trabalheconosco.html" class="nav-link scroll-link">
+                    <a href="/trabalheconosco.html#trabalhe-conosco"  class="nav-link scroll-link">
                         <span style="font-size: 14px;">TRABALHE CONOSCO</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contato.html" class="nav-link scroll-link">
+                    <a href="/contato.html#nosso-contato" class="nav-link scroll-link">
                         <span style="font-size: 14px;">CONTATO</span>
                     </a>
                 </li>
@@ -80,8 +80,8 @@
                             <h2 class="fw-bolder"><span class="font-text">Alcance Novos
                                     Horizontes</span></h2>
                             <p class="fw-bolder">
-                                <span class="font-text">Descubra como nosso serviço de agenciamento marítimo pode
-                                    impulsionar sua presença digital e aumentar suas vendas.</span>
+                                <span class="font-text">Descubra como nosso serviço de Agenciamento Marítimo pode
+                                    impulsionar sua empresa.</span>
                             </p>
                         </div>
                     </div>
@@ -391,6 +391,26 @@
             event.preventDefault(); // Impede o comportamento padrão do link
             // Outras ações que você pode querer executar quando o link é clicado
         }
+
+
+        function scrollToSection(sectionId) {
+            var targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                // Calcula a posição da seção alvo
+                var targetPosition = targetSection.offsetTop;
+
+                // Opções de animação
+                var options = {
+                    behavior: 'smooth', // Rola suavemente
+                    block: 'start' // Mantém o início da seção no topo da janela
+                };
+
+                // Rola até a posição da seção alvo
+                window.scrollTo(options);
+            }
+
+        }
+
     </script>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

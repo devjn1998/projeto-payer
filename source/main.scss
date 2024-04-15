@@ -17,6 +17,12 @@
     @return math.div($alvoEmPixel, $contextoEmPixel)+em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 /*Corpo e Header*/
 
 body {
@@ -392,8 +398,7 @@ section#sobre-nos {
 }
 
 /* Seção Trabalhe Conosco */
-section#trabalheconosco .font-text
-{
+section#trabalheconosco .font-text {
     font-size: 1.4rem;
     padding: 18px;
 }
@@ -408,20 +413,17 @@ section#trabalheconosco .duas-colunas-servicos-img {
     padding: 28px;
 }
 
-section#trabalheconosco .a-img-size
-{
+section#trabalheconosco .a-img-size {
     height: 400px;
     width: 550px;
     border: 3px solid variaveis.$corDeFundo;
 }
 
-.font-pequena
-{
+.font-pequena {
     font-size: 1rem;
 }
 
-input#curriculo
-{
+input#curriculo {
     background-color: #fff;
 }
 
@@ -643,33 +645,29 @@ footer {
             font-size: 3rem;
         }
 
-        .a-img-size
-        {
+        .a-img-size {
             width: 12rem;
         }
 
-        
+
     }
-    section#sobre-nos img.a-img-size
-    {
+
+    section#sobre-nos img.a-img-size {
         width: 13rem;
         height: 10rem;
     }
 
-    section#trabalheconosco .duas-colunas-servicos-img
-    {
+    section#trabalheconosco .duas-colunas-servicos-img {
         height: 39.9rem;
     }
 
-    .align
-    {
-        form
-        {
+    .align {
+        form {
             height: 38.6rem;
         }
     }
 
-    
+
 
 }
 
@@ -707,8 +705,7 @@ footer {
         }
     }
 
-    section#trabalheconosco .duas-colunas-servicos-img
-    {
+    section#trabalheconosco .duas-colunas-servicos-img {
         height: 41.3rem;
     }
 }
@@ -818,8 +815,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    section#trabalheconosco .duas-colunas-servicos-img
-    {
+    section#trabalheconosco .duas-colunas-servicos-img {
         height: 45.3rem;
         width: 37rem;
     }
@@ -865,30 +861,25 @@ footer {
         font-size: 0.8rem;
     }
 
-    .cor-destaque
-    {
+    .cor-destaque {
         font-size: 0.8rem;
     }
 
-    .agenciamento-maritimo .duas-colunas-servicos
-    {
+    .agenciamento-maritimo .duas-colunas-servicos {
         gap: 1%;
     }
 
-    section#sobre-nos img.a-img-size
-    {
+    section#sobre-nos img.a-img-size {
         width: 9rem;
         height: 8rem;
     }
 
-    section#trabalheconosco .a-img-size
-    {
+    section#trabalheconosco .a-img-size {
         width: 21.3rem;
         height: 21.8rem;
     }
 
-    section#trabalheconosco .duas-colunas-servicos-img
-    {
+    section#trabalheconosco .duas-colunas-servicos-img {
         width: 25rem;
         height: 49rem;
         padding: 18px;
@@ -941,7 +932,7 @@ footer {
         width: 100%;
     }
 
-    .img-size{
+    .img-size {
         height: 280px;
     }
 
@@ -1003,25 +994,22 @@ footer {
             font-size: 1rem;
         }
 
-        .a-img-size{
+        .a-img-size {
             width: 9rem;
         }
     }
 
-    section#sobre-nos img.a-img-size
-    {
+    section#sobre-nos img.a-img-size {
         width: 8rem;
         height: 6rem;
     }
 
-    section#trabalheconosco .a-img-size
-    {
+    section#trabalheconosco .a-img-size {
         width: 18rem;
         height: 18rem;
     }
 
-    section#trabalheconosco .duas-colunas-servicos-img
-    {
+    section#trabalheconosco .duas-colunas-servicos-img {
         width: 22rem;
         height: 51rem;
         padding: 18px;
@@ -1038,7 +1026,7 @@ footer {
             font-size: 0.9rem;
         }
 
-        .a-img-size{
+        .a-img-size {
             width: 8rem;
         }
     }
@@ -1076,7 +1064,7 @@ footer {
         padding: 0
     }
 
-    .img-size{
+    .img-size {
         height: 240px;
     }
 
@@ -1129,14 +1117,12 @@ footer {
         font-size: 0.6rem;
     }
 
-    section#trabalheconosco .a-img-size
-    {
+    section#trabalheconosco .a-img-size {
         width: 16rem;
         height: 16rem;
     }
 
-    section#trabalheconosco .duas-colunas-servicos-img
-    {
+    section#trabalheconosco .duas-colunas-servicos-img {
         width: 18rem;
         height: 57rem;
         padding: 18px;

@@ -8,6 +8,10 @@
 }
 
 /*Functions*/
+html {
+  scroll-behavior: smooth;
+}
+
 /*Corpo e Header*/
 body {
   background: linear-gradient(to bottom, #F5F6FA, #dcdde1);
