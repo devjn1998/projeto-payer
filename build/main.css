@@ -670,7 +670,7 @@ ul.ul-estilo {
     height: 700px;
   }
   .cunstom-rounded-right {
-    display: none;
+    display: block;
   }
   div#imgdiv {
     display: none;
@@ -698,6 +698,11 @@ ul.ul-estilo {
   .descricao-servicos {
     padding: 0;
     margin-top: 1rem;
+  }
+}
+@media (max-width: 764px) {
+  .cunstom-rounded-right {
+    display: none;
   }
 }
 @media (max-width: 590px) {
@@ -755,6 +760,9 @@ ul.ul-estilo {
   .descricao-servicos {
     padding: 0;
     margin-top: 1rem;
+  }
+  .cunstom-rounded-right {
+    display: none;
   }
 }
 @media (max-width: 425px) {
