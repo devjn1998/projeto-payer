@@ -98,12 +98,18 @@ div.alinhamento a.btn-servicos {
   background-color: #fbc531;
   border-radius: 2px;
   font-weight: bolder;
+  font-size: 1rem;
   padding: 14px;
   margin-top: 18px;
   border: none;
   border-radius: 6px;
   color: #192A56;
   text-decoration: none;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
 }
 div.alinhamento a.btn-servicos:hover {
   background-color: #f4b405;
@@ -402,6 +408,8 @@ input#curriculo {
   height: 28rem;
   margin-top: 12px;
   padding-top: 12px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .card-tab .icon-size {
   width: 58px;
@@ -531,6 +539,10 @@ ul.ul-estilo {
   }
   .card-tab {
     font-size: 0.9rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
   }
   ul.nav.nav-pills {
     padding-right: 68px;
@@ -635,6 +647,7 @@ ul.ul-estilo {
     height: 14rem;
     text-align: center;
     align-items: center;
+    border-radius: 10px;
   }
   .card-tab h2,
   .card-tab p {
@@ -657,6 +670,7 @@ ul.ul-estilo {
   section#nossa-apresentacao .card-tab {
     height: 600px;
     justify-content: center;
+    border-radius: 10px;
   }
   section#nossa-apresentacao .img-responsize {
     display: none;
@@ -755,10 +769,10 @@ ul.ul-estilo {
     font-size: 2rem;
   }
   .duas-colunas-img {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
   }
   .descricao-servicos {
-    padding: 0;
+    padding: 10px;
     margin-top: 1rem;
   }
   .cunstom-rounded-right {
@@ -865,10 +879,10 @@ ul.ul-estilo {
     font-size: 1.7rem;
   }
   .duas-colunas-img {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .descricao-servicos {
-    padding: 0;
+    padding: 10px;
     margin-top: 1rem;
   }
   footer p {
@@ -974,13 +988,16 @@ ul.ul-estilo {
     font-size: 1rem;
   }
   .duas-colunas-img {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .descricao-servicos {
-    padding: 0;
+    padding: 10px;
     margin-top: 1rem;
   }
   .ul-estilo {
+    display: none;
+  }
+  .img-none {
     display: none;
   }
 }
