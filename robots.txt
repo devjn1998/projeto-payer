@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin/   # Esta linha instrui os robôs a não rastrearem a pasta /admin/
+Disallow: /private/ # Esta linha instrui os robôs a não rastrearem a pasta /private/
