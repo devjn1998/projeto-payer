@@ -47,12 +47,23 @@ $('form').validate({
     }
 })
 
-document.getElementById('trabalhe-conosco').addEventListener('submit', function (event){
-    var arquivoInput = document.getElementById('curriculo');
-    var arquivo = arquivoInput.files[0];
-    if ( arquivo && arquivo.type !== 'application/pdf') {
-        alert("Porfavor, selecione um arquivo PDF. ")
-    }
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('curriculo').addEventListener('change', function (event) {
+        var arquivo = event.target.files[0];
+        if (arquivo && arquivo.type !== 'application/pdf') {
+            alert("Por favor, selecione um arquivo PDF.");
+            // Limpar o campo de entrada de arquivo, se necessário
+            event.target.value = '';
+        }
+    });
+
+    document.getElementById('trabalhe-conosco').addEventListener('submit', function (event) {
+        var arquivoInput = document.getElementById('curriculo');
+        var arquivo = arquivoInput.files[0];
+        if (!arquivo || arquivo.type !== 'application/pdf') {
+            event.preventDefault(); // Evita o envio do formulário se o arquivo não for PDF
+        }
+    });
 });
 
 
