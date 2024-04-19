@@ -690,7 +690,7 @@ ul.ul-estilo {
     display: none;
   }
   div#imgdiv.col-md-6.card-tab {
-    display: none;
+    display: block;
   }
   div.tres-colunas .row {
     padding: 20px;
@@ -714,8 +714,11 @@ ul.ul-estilo {
     margin-top: 1rem;
   }
 }
-@media (max-width: 764px) {
+@media (max-width: 767px) {
   .cunstom-rounded-right {
+    display: none;
+  }
+  div#imgdiv.col-md-6.card-tab {
     display: none;
   }
 }
@@ -776,6 +779,9 @@ ul.ul-estilo {
     margin-top: 1rem;
   }
   .cunstom-rounded-right {
+    display: none;
+  }
+  div#imgdiv.col-md-6.card-tab {
     display: none;
   }
 }

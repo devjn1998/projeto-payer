@@ -858,7 +858,7 @@ ul.ul-estilo {
     }
 
     div#imgdiv.col-md-6.card-tab {
-        display: none;
+        display: block;
     }
 
     div.tres-colunas .row {
@@ -890,8 +890,12 @@ ul.ul-estilo {
     }
 }
 
-@media (max-width: 764px) {
+@media (max-width: 767px) {
     .cunstom-rounded-right {
+        display: none;
+    }
+
+    div#imgdiv.col-md-6.card-tab {
         display: none;
     }
 }
@@ -974,6 +978,10 @@ ul.ul-estilo {
     }
 
     .cunstom-rounded-right {
+        display: none;
+    }
+
+    div#imgdiv.col-md-6.card-tab {
         display: none;
     }
 
