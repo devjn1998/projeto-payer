@@ -1,4 +1,4 @@
-# Big Game Survey 
+# Projeto FN Agenciamentos Marítimos
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/devjn1998/projeto-payer/blob/projeto-payer/LICENSE) 
 
 # Sobre o projeto
