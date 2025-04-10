@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
 import WhatsAppButton from "../components/common/WhatsAppButton";
+import Carousel from "../components/home/Carousel";
 
 interface FormData {
   nome: string;
@@ -189,8 +190,9 @@ const WorkWithUs: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <Carousel />
 
-      <main className="flex-grow mt-28 md:mt-32 lg:mt-36">
+      <main className="flex-grow">
         <section className="py-8 md:py-12 lg:py-16 bg-background">
           <div className="container mx-auto px-4">
             <h1 className="text-2xl md:text-3xl font-bold text-primary mb-6 md:mb-8 pb-2 border-b-2 border-primary inline-block">

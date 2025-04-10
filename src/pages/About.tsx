@@ -1,16 +1,18 @@
 import React from "react";
-import Header from "../components/common/Header";
 import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
 import WhatsAppButton from "../components/common/WhatsAppButton";
+import Carousel from "../components/home/Carousel";
 
 const About: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <Carousel />
 
       <main className="flex-grow">
         <section className="py-16 bg-background">
-          <div className="container mx-auto px-4 mt-32">
+          <div className="container mx-auto px-4">
             <div className="flex flex-row justify-between items-center mx-auto max-w-4xl gap-12">
               <div className="flex flex-col justify-center w-1/2">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-8 pb-2 border-b-2 border-primary inline-block transform transition-all duration-300 hover:scale-105">
