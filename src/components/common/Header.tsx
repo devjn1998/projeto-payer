@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // Estendendo a interface Window para incluir scrollTimer
@@ -51,7 +51,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 
         ${
           isScrolling
             ? "bg-gradient-to-b from-primary/95 to-transparent"
@@ -70,7 +70,7 @@ const Header: React.FC = () => {
         </Link>
 
         <button
-          className="md:hidden bg-accent text-white p-2 rounded-md mr-4 shadow-lg hover:bg-accent/80 transition-colors duration-300"
+          className="md:hidden bg-accent text-white p-2 rounded-md mr-4 shadow-lg hover:bg-accent/80 transition-colors duration-300 z-[101]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Menu"
         >
@@ -92,8 +92,8 @@ const Header: React.FC = () => {
 
         {/* Menu mobile */}
         <div
-          className={`fixed inset-0 bg-primary/95 z-50 flex flex-col items-center justify-center space-y-8 transition-transform duration-300 md:hidden ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed inset-0 bg-primary/95 z-[99] flex flex-col items-center justify-center space-y-8 transition-all duration-300 ease-in-out md:hidden ${
+            isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
           <button
