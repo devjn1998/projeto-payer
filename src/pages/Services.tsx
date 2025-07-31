@@ -11,8 +11,7 @@ const Services: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-
-      <main className="flex-grow pt-16 md:pt-20">
+      <main className="flex-grow">
         <Carousel />
 
         <section id="nossos-servicos" className="py-8 md:py-16 bg-background">
